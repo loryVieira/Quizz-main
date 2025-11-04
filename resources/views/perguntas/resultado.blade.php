@@ -9,14 +9,15 @@
     <body>
 
         <div class="container mt-5">
-            <div class="row">
-                <div class="col text-center">
-                    <h1>Bem-vindo ao Quiz! </h1>
-                    <p class="lead">Teste seus conhecimentos com {{$total_perguntas}} perguntas desafiadoras.</p>
-                    <a href="{{ route('responder') }}" class="btn btn-primary btn-lg">Iniciar Quiz</a>
+            <h1>Resultado do Quizz</h1>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h2 class="card-title">Sua Pontuação: {{ $pontuacao }}</h2>
+
+                    <a href="{{ route('inicio') }}" class="btn btn-primary mt-3">Tentar Novamente</a>
                 </div>
             </div>
-        </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
